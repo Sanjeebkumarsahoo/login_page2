@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100% ;
+    height:100%;
+    font-family: sans-serif;
+    background-image: url(https://wallpapershome.com/images/wallpapers/abstract-nature-1280x720-8k-21456.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.card{
+    width:400px;
+    height:500px ;
+    position: relative;
+    margin:6% auto;
+    box-shadow: 0 0 40px 20px rgba(48, 3, 228, 0.838);
+    perspective: 1000PX;
+   
+}
+
+.inner-card{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+   
+
+}
+.innercard-font,.innercard-back{
+    position: absolute;
+    width:100% ;
+    height:100% ;
+    background-position:center ;
+    background-size:cover ;
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.ssMM1TgUsZZQSUBzEj1uWAHaF7&pid=Api&P=0&h=180);
+    padding:55px ;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.innercard-back{
+    transform: rotateY(180deg);
+}
+.card h2{
+    font-weight: bold;
+    color: azure;
+    font-size: 25px;
+    text-align:center ;
+    margin-bottom: 20px;
+}
+.input-box{
+    width:100% ;
+    background: transparent;
+    border: 3px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding:0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #f9fbf4;
+}
+::placeholder{
+    color:#eef1f0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+}
+button{
+    width:100%;
+    background: transparent;
+    border:3px solid #eef0f1;
+    margin: 25px 0 10px;
+    height: 32px;
+    font-size:16px ;
+    font-weight: bold;
+    font-style:normal;
+    border-radius: 20px ;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline:none ;
+    color: rgb(140, 185, 223);
+    cursor: pointer;
+}
+.submit-btn{
+ position: relative;
+    
+ }
+    
+ .submit-btn::after{
+    content: '\27a4';
+     color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+
+ }
+
+span{
+font-size: 20px;
+margin-left: 10px;
+}
+
+
+ .card .btn{
+margin-top: 50px;
+
+}
+
+.card a{
+color: #fff;
+text-decoration:underline;
+display: block;
+text-align: center;
+font-size: 15px;
+margin-top: 8px;
+
+ }
+
+
+

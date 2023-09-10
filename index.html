@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3D FLIP LOGIN & REGISTRATION PAGE</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-card" id="card">
+                 <div class="innercard-font">
+                    <h2>LOGIN</h2>
+                      <form>
+                        <button type="button" class="input-box"><img src="https://tse4.mm.bing.net/th?id=OIP.dto_UknSThfSRMLbtm2PGQHaHh&pid=Api&P=0&h=180" height="20px" weight="20px" > <b> Sign in with google </b></button>
+                      <input type="email" class="input-box" placeholder="Your Email ID" required/>
+                      <input type="password" class="input-box" placeholder="Your Passwowd" required/>
+                     <button type="submit" class="submit-btn"><b>submit</b></button>
+                      <input type="checkbox" /><span>Remember me</span>
+                      </form>
+                      <button type="button" class="btn" onclick="openRegister()"><b>I am new here</b> </button>
+                       <a href="">Forget password</a>
+                      </div>
+                  <div class="innercard-back">
+                <h2>REGISTER</h2>
+                <form>
+                    <input type="text" class="input-box" placeholder="Your FULL Name" required/>
+                    <input type="email" class="input-box" placeholder="Your Email ID " required/>
+                <input type="password" class="input-box" placeholder="Your Passwowd" required/>
+                <input type="text" class="input-box" placeholder="Your Age" required/>
+                <button type="submit" class="submit-btn"><b>submit</b></button>
+                <input type="checkbox" /><span>Remember me</span>
+               </form>
+               <button type="button" class="btn" onclick="openLogin()"> <b>I have an account</b></button>
+               <a href="">Forget password</a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var card = document.getElementById("card");
+        function openRegister(){
+            card.style.transform ="rotateY(-180deg)";
+
+        }
+        function openLogin(){
+            card.style.transform ="rotateY(0deg)";
+
+        }
+    </script>
+    
+</body>
+</html>
